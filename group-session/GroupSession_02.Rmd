@@ -1,0 +1,112 @@
+---
+title: "Urban Big Data Analytics - Group Session 2: Open data platform"
+author: "Andy Hong"
+date: "July 18, 2019"
+output:
+  html_document:
+    css: my_styles.css
+  pdf_document: default
+  word_document: default
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Prerequisites
+
+* Go to US City Open Data Census: http://us-cities.survey.okfn.org/
+* Wait until the page loading is completed. 
+* Rank the cities by Open Data Score
+
+
+## Instruction
+
+### 1. Synopsis
+The purpose of this group session is to introduce you to the world of **open data**. The US City Open Census is a good place to start looking for open data from hundreds of cities in the US. The census gives you a sense of how each city is ranked by its open data readiness. It ranks the cities by 20 different categories, and provides information about where to get those data.
+
+**Categories of open data in various cities**
+
++ Budget
++ Crime Reports
++ Parcels
++ Construction Permits
++ Zoning
++ Service Requests
++ Code Violations
++ Employee Salaries
++ Business Listings
++ Spending
++ Restaurant Inspections
++ Public Facilities
++ Traffic Crashes
++ Property Assessment
++ Procurement Contracts
++ Emergency Calls
++ Lobbyist Activity
++ Police Use-of-Force
++ Property Transfers
++ Website Analytics
+
+### 2. Each group is assigned one city to explore its open data readiness for crime incidents
+
+ + Group 1: Boston, MA <a href="https://data.boston.gov/dataset/crime-incident-reports-august-2015-to-date-source-new-system" target="_blank">(link)</a>
+ + Group 2: Los Angeles, CA <a href="https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/63jg-8b9z" target="_blank">(link)</a>
+ + Group 3: Los Angeles, CA <a href="https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/63jg-8b9z" target="_blank">(link)</a> 
+ + Group 4: San Fancisco, CA <a href="https://data.sfgov.org/Public-Safety/-Change-Notice-Police-Department-Incidents/tmnf-yvry" target="_blank">(link)</a>
+ + Group 5: Washington, DC <a href="http://opendata.dc.gov/datasets/crime-incidents-in-2017" target="_blank">(link)</a>
+ + Group 6: New York City, NY <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i" target="_blank">(link)</a>
+ + Group 7: New York City, NY <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i" target="_blank">(link)</a>
+ + Group 8: Philadelphia, PA <a href="https://www.opendataphilly.org/dataset/crime-incidents" target="_blank">(link)</a>
+ + Group 9: Detroit, MI <a href="https://data.detroitmi.gov/Public-Safety/DPD-All-Crime-Incidents-January-1-2009-December-6-/invm-th67" target="_blank">(link)</a>
+ + Group 10: Detroit, MI <a href="https://data.detroitmi.gov/Public-Safety/DPD-All-Crime-Incidents-January-1-2009-December-6-/invm-th67" target="_blank">(link)</a>
+ 
+### 3. Assess quality and usuability of crime data
+
+ + Data quality
+    + How many years of data are available?
+    + What are the variables in the data? Dooes it have these four key variables? 1) `Date and time`; 2) `Location` (may be coordinates or addresses); 3) `Incident type`; 4) `Narrative information`
+ + Usability
+    + How easy is it to explore the data?
+    + Can you understand the variables?
+    + Can you visualize the data?
+    + Can you download the data and open in Excel?
+ + Data wrangling (cleaning) needs assessment
+    + How clean is the data? Do you see any weird characters or data cleaning needs?
+    + How clean are the variable (column) names? Any space or weird characters in the variable names?
+    + (extra points) What are the variable types? Do you need to change the types?
+
+ + <font color="red">Only for the advanced students - Extra 2 points for your assignment 2</font>
+    + Use the baes R code to access <a href="https://urbanbigdata.github.io/02-lecture-open_data/codes/api_demo.R" target="_blank">Chicago crime API endpoint</a>
+    + Modify the code to access the API endpoint of your group's crime data
+    + If the "year" parameter is not available, use other parameters, ex) date. Hint: read the API docs
+    + Send your R code along with your assignment 2 to get the extra points
+
+## Tell your story
+
+ + Pick one person in your group to present your story. Each group has three minutes to present.
+ 
+ + All group members should explore the data individually but answer the questions together.
+ 
+ + The presenter should have the final answers to share with the classroom.
+ 
+ + Prepare a one page report answering the questions above and email the answers to the course email (urbanbigdata2019@gmail.com). Please use the following email title format: <br>
+ `VSP BigData [lecture number] - [group number] - [presenter name]` <br>
+ ex) `VSP BigData Lecture 2 - Group 1 - Bill Gates` <br>
+ 
+<br><br><br>
+ 
+
+  
+
+
+
+
+ 
+ 
+
+
+
+
